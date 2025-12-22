@@ -36,7 +36,7 @@ const BraceletProducts = ({ handleAddToCart }) => {
                 <div className="product-grid">
                     {products.map((product, index) => (
                         <div className="product-card" key={index}>
-                            <img src={product.image} alt="Product Image" />
+                            <img src={product.image} alt={product.name} />
                             <h6>{product.name}</h6>
                             <p className="description">{product.description}</p>
                             <p className="price">{product.price}</p>
