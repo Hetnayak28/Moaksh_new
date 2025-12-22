@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import backgroundImage from '../assets/images/background.jpg';
 
 const HeroSection = () => {
@@ -26,14 +26,7 @@ const HeroSection = () => {
         setCurrentIndex(index);
     };
 
-    // Optional: Auto-slide functionality
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         goToNextSlide();
-    //     }, 5000);
-    //     return () => clearInterval(interval);
-    // }, [currentIndex]);
-
+  
     return (
         <section
             className="hero-section"
