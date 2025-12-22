@@ -5,11 +5,11 @@ const HeroSection = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slides = [
         {
-            title: "MOKASH CRYSTALS",
+            title: "MOKSH CRYSTALS",
             subtitle: "Help the Needy, Support the Elderly and Guide the Youth"
         },
         {
-            title: "MOKASH CRYSTALS",
+            title: "MOKSH CRYSTALS",
             subtitle: "Values beyond Imaginations"
         }
     ];
