@@ -1,38 +1,487 @@
-.App {
-  text-align: center;
+/* Basic styles will go here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.google-translate-placeholder {
+    background-color: #3f51b5; /* Example color based on the image */
+    color: white;
+    padding: 5px 0;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 10%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.google-translate-placeholder span {
+    margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header Styles */
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currency-selector select {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Header Styles - existing styles will be modified or new ones added */
+.logo img {
+    max-height: 70px; /* Adjust as needed */
+    width: auto;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+    max-width: 500px; /* Limit search bar width */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: #3f51b5; /* Example search button color */
+    color: #fff;
+    border: 1px solid #3f51b5;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #303f9f;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.user-actions a i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.cart a {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Keep cart text on one line */
+}
+
+.cart a i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+/* Main Menu - Adjustments if needed to align with new header */
+.main-menu {
+    background-color: #fff; /* Changed to white background */
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: flex-start; /* Align menu items to the left */
+    gap: 50px; /* Increased gap for more spacing */
+    list-style: none; /* Remove dots */
+}
+
+.main-menu ul li {
+    list-style: none; /* Removed dots */
+}
+
+.main-menu ul li a {
+    color: #555; /* Lighter grey color */
+    font-weight: normal;
+    text-decoration: none; /* Ensure no underline */
+}
+
+.main-menu ul li a:hover {
+    color: #e44d26; /* Example hover color */
+    background-color: transparent;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Hide overflowing slides */
+}
+
+.hero-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero-slide {
+    min-width: 100%; /* Each slide takes full width */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.slider-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pagination-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #e44d26; /* Active dot color */
+}
+
+.hero-slide h2 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-slide h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.shop-now-btn {
+    background-color: #e44d26; /* Example color */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #c0392b; /* Example hover color */
+}
+
+/* Product Categories Styles */
+.product-categories {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.product-categories .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.category-group h5 {
+    font-size: 32px;
+    color: #333;
+    border-bottom: 2px solid #3a4f8b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.category-grid {
+    display: flex; /* Changed from grid to flex */
+    flex-wrap: nowrap; /* Ensures items stay in a single line */
+    gap: 20px;
+    padding: 20px 0;
+    overflow-x: auto; /* Adds horizontal scrolling if content overflows */
+}
+
+.category-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.category-card h6 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* Recommended Products Styles */
+.recommended-products {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.recommended-products h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 0px;
+    text-align: center;
+    box-shadow: none;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 180px; /* Set a fixed height for images */
+    object-fit: contain; /* Ensure images are contained within the fixed height */
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.product-card h6 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.product-card .price {
+    font-size: 18px;
+    color: #e44d26; /* Example color */
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.product-card button {
+    background-color: #3A4F8B; /* Dark blue from the image */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #2e4073; /* Slightly darker blue on hover */
+}
+
+.see-all-btn {
+    background-color: #337ab7; /* Example color */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.see-all-btn:hover {
+    background-color: #286090; /* Example hover color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 0;
+    font-size: 14px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    color: #e44d26; /* Example color */
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    padding: 5px 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.footer-section.newsletter input[type="email"] {
+    width: calc(100% - 100px); /* Adjust width based on button */
+    padding: 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    margin-right: -4px; /* To make it stick to the button */
+}
+
+.footer-section.newsletter button {
+    background-color: #e44d26; /* Example color */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section.newsletter button:hover {
+    background-color: #c0392b; /* Example hover color */
+}
+
+.privacy-text {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.privacy-text a {
+    color: #e44d26; /* Example color */
+    text-decoration: none;
+}
+
+.bottom-bar {
+    background-color: #222;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.bottom-bar p {
+    margin: 0;
+    color: #aaa;
 }
