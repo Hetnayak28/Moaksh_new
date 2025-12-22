@@ -29,7 +29,7 @@ const Footer = () => {
                     <h4>Navigation</h4>
                     <ul>
                         <li><a href="/about-us">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        {/* <li><a href="">Contact Us</a></li> */}
                     </ul>
                 </div>
                 <div className="footer-section newsletter">
@@ -44,7 +44,7 @@ const Footer = () => {
                         />
                         <button type="submit">Subscribe</button>
                     </form>
-                    <p className="privacy-text">By providing your email address, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+                    <p className="privacy-text">By providing your email address, you agree to our  and</p>
                 </div>
             </div>
             <div className="bottom-bar">

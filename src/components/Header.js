@@ -44,13 +44,9 @@ const Header = ({ cartCount, onSearchSubmit }) => {
                 <div className="container">
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><a href="#">Products Knowledge</a></li>
-                        <li><a href="#">Chakra Balancing</a></li>
-                        <li><a href="#">Crystals/Stones Association with Universe</a></li>
+                       
                         <li><Link to="/about-us">About Us</Link></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">WHOLESALE</a></li>
-                        <li><a href="#">CRYSTALS AND CHARTS</a></li>
+            
                     </ul>
                 </div>
             </nav>
