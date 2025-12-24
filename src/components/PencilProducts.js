@@ -17,7 +17,6 @@ const PencilProducts = ({ handleAddToCart }) => {
                             <h6>{product.name}</h6>
                             <p className="description">{product.description}</p>
                             <p className="price">{product.price}</p>
-                            <button onClick={handleAddToCart}>Add to Cart</button>
                         </div>
                     ))}
                 </div>
