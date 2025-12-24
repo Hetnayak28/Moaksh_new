@@ -17,13 +17,13 @@ const Footer = () => {
         <footer>
             <div className="container">
                 <div className="footer-section about-us">
-                    <h4>About Jet International</h4>
-                    <p>At JET INTERNATIONAL, we deliver the best possible products competitive in the world market with least possible time consumption – i.e. at Jet Speed.</p>
+                    <h4>About MOAKSH</h4>
+                    <p>At MOAKSH, we deliver the best possible products competitive in the world market with least possible time consumption – i.e. at Jet Speed.</p>
                 </div>
                 <div className="footer-section contact-info">
                     <h4>Got Question? Call us 24/7!</h4>
                     <p>(+91)8401536267</p>
-                    <p>Address: Jet International SHED 2B SHED 2B OPP RADHE SHAYAM ELITE, NEAR GREEN FIELD 3 BEHIND SIDDHI VINAYAK RESIDENCY BHAYLI, Vadodara, Gujarat, IN, 391410</p>
+                    <p>ADDRESS : RAMESHWARAM ENTERPRISE, B-702 SURBHI POSHIBLE, KOTHARIYA MAIN ROAD, OMKAR SCHOOL, KOTHARIYA NAGAR, RAJKOT, GUJARAT, 360022 </p>
                 </div>
                 <div className="footer-section navigation">
                     <h4>Navigation</h4>
