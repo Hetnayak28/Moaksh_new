@@ -36,14 +36,14 @@ const AllProducts = ({ handleAddToCart, searchQuery }) => {
         { name: "Jet Crystal Combination Kit (FOREIGN SETTLEMENT )", price: "500", image: image10, description: "Helps in smooth transition and settlement in foreign lands." },
         { name: "Jet Crystal Combination Kit (FOREIGN SETTLEMENT )", price: "500", image: image11, description: "Attracts opportunities for foreign residency and work." },
         { name: "Jet Crystal Combination Kit (FOREIGN SETTLEMENT )", price: "500", image: image12, description: "Promotes success in international ventures." },
-        { name: "Pyramid Product 1", price: "100.00", image: pyramidImage1, description: "A powerful pyramid for energy amplification." },
-        { name: "Pyramid Product 2", price: "150.00", image: pyramidImage2, description: "Enhances spiritual growth and meditation." },
-        { name: "Bracelet Product 9", price: "55.00", image: braceletImage9, description: "Modern design bracelet for a contemporary look." },
-        { name: "Bracelet Product 10", price: "95.00", image: braceletImage10, description: "Exquisite bracelet with sparkling accents." },
-        { name: "Bracelet Product 11", price: "65.00", image: braceletImage11, description: "Bohemian style bracelet, perfect for free spirits." },
-        { name: "Bracelet Product 12", price: "85.00", image: braceletImage12_new, description: "Minimalist bracelet, ideal for stacking." },
-        { name: "Bracelet Product 13", price: "110.00", image: braceletImage13, description: "Statement bracelet, sure to turn heads." },
-        { name: "Pencil Product 3", price: "10.00", image: pencilImage, description: "A high-quality pencil for all your writing needs." },
+        { name: "Pyramid Product 1", price: "500", image: pyramidImage1, description: "A powerful pyramid for energy amplification." },
+        { name: "Pyramid Product 2", price: "500", image: pyramidImage2, description: "Enhances spiritual growth and meditation." },
+        { name: "Bracelet Product 9", price: "500", image: braceletImage9, description: "Modern design bracelet for a contemporary look." },
+        { name: "Bracelet Product 10", price: "500", image: braceletImage10, description: "Exquisite bracelet with sparkling accents." },
+        { name: "Bracelet Product 11", price: "500", image: braceletImage11, description: "Bohemian style bracelet, perfect for free spirits." },
+        { name: "Bracelet Product 12", price: "500", image: braceletImage12_new, description: "Minimalist bracelet, ideal for stacking." },
+        { name: "Bracelet Product 13", price: "500", image: braceletImage13, description: "Statement bracelet, sure to turn heads." },
+        { name: "Pencil Product 3", price: "500", image: pencilImage, description: "A high-quality pencil for all your writing needs." },
     ];
 
 
