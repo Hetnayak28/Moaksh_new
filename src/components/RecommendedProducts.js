@@ -17,21 +17,21 @@ import pencilImage from '../assets/images/pencile 1.jpg';
 const RecommendedProducts = ({ handleAddToCart }) => {
     const products = [
        // { name: "Jet Crystal Combination Kit (SOCIAL MEDIA FAME)", price: "224.99", image: image1, description: "" },
-        { name: "Money magnate ", price: "", image: image2, description: "Benefits: Financial stability, Money related decision strong, Money attract, Good luck attract, Business improvement" },
-        { name: "Tiger eye", price: "", image: image3, description: "Benefits: To improve digestion systems Strong guts feeling Improve your decision power Protect negative energy Physics protection Balance seven chakras" },
-        { name: "Golden money magnate", price: "", image: image4, description: "Benefits: Financial stability, Money related decision strong, Money attract, Good luck attract, Business improvement" },
-        { name: "Tripal Protection", price: "", image: image5, description: "Facilitates smooth international trade and business growth." },
-        { name: "Natural 7 chakra", price: "", image: image6, description: "Promotes prosperity and abundance in grocery business." },
-        { name: "Natural citrine light color", price: "", image: image7, description: "Supports healing and well-being in medical practices." },
-        { name: "Red jasper", price: "", image: image8, description: "Improve earth energy Physical strong Active five senses Grounded" },
-        { name: "7 chakra pyramid", price: "", image: image9, description: "Ensures safe travels and memorable journeys." },
-        { name: "Shree yantra", price: "", image: image10, description: "Helps in smooth transition and settlement in foreign lands." },
+        { name: "Money magnate ", price: "500", image: image2, description: "Benefits: Financial stability, Money related decision strong, Money attract, Good luck attract, Business improvement" },
+        { name: "Tiger eye", price: "500", image: image3, description: "Benefits: To improve digestion systems Strong guts feeling Improve your decision power Protect negative energy Physics protection Balance seven chakras" },
+        { name: "Golden money magnate", price: "500", image: image4, description: "Benefits: Financial stability, Money related decision strong, Money attract, Good luck attract, Business improvement" },
+        { name: "Tripal Protection", price: "500", image: image5, description: "Facilitates smooth international trade and business growth." },
+        { name: "Natural 7 chakra", price: "500", image: image6, description: "Promotes prosperity and abundance in grocery business." },
+        { name: "Natural citrine light color", price: "500", image: image7, description: "Supports healing and well-being in medical practices." },
+        { name: "Red jasper", price: "500", image: image8, description: "Improve earth energy Physical strong Active five senses Grounded" },
+        { name: "7 chakra pyramid", price: "500", image: image9, description: "Ensures safe travels and memorable journeys." },
+        { name: "Shree yantra", price: "500", image: image10, description: "Helps in smooth transition and settlement in foreign lands." },
         { name: "Natural Howlite", price: "", image: image11, description: "Chakras balance Improve your creativity Improve your focusCalmness and protection Clean your aura" },
         //{ name: "", price: "", image: image12, description: "Minimalist bracelet, ideal for stacking." },
-        { name: "Bracelet Product 13", price: "", image: image13, description: "Statement bracelet, sure to turn heads." },
-        { name: "Bracelet Product 14", price: "", image: image14, description: "Business improvement Good luck attract" },
-        { name: "Seven chakras+ lava stone", price: "", image: image15, description: "Balance seven chakras Balance your energy Protection aura" },
-        { name: "Pencil Product new", price: "", image: pencilImage, description: "A brand new pencil for creative endeavors." }
+        { name: "Bracelet Product 13", price: "500", image: image13, description: "Statement bracelet, sure to turn heads." },
+        { name: "Bracelet Product 14", price: "500", image: image14, description: "Business improvement Good luck attract" },
+        { name: "Seven chakras+ lava stone", price: "500", image: image15, description: "Balance seven chakras Balance your energy Protection aura" },
+        { name: "Pencil Product new", price: "500", image: pencilImage, description: "A brand new pencil for creative endeavors." }
     ];
     return (
         <section className="recommended-products">
