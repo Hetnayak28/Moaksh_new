@@ -4,8 +4,8 @@ import pyramidImage2 from '../assets/images/pyramid 2.jpg';
 
 const PyramidProducts = ({ handleAddToCart }) => {
     const products = [
-        { name: "Pyramid Product 1", price: "100.00", image: pyramidImage1, description: "This is the first pyramid product." },
-        { name: "Pyramid Product 2", price: "150.00", image: pyramidImage2, description: "This is the second pyramid product." },
+        { name: "Pyramid Product 1", price: "500.00", image: pyramidImage1, description: "This is the first pyramid product." },
+        { name: "Pyramid Product 2", price: "500.00", image: pyramidImage2, description: "This is the second pyramid product." },
         // Add more pyramid products here with their respective images
     ];
 

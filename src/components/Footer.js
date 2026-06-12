@@ -23,7 +23,7 @@ const Footer = () => {
                 <div className="footer-section contact-info">
                     <h4>Got Question? Call us 24/7!</h4>
                     <p>(+91)8401536267</p>
-                    <p>ADDRESS : SHREE SIDDHI VINAYAK ENTERPRICE, B-702 SURBHI POSHIBLE, KOTHARIYA MAIN ROAD, OMKAR SCHOOL, KOTHARIYA NAGAR, RAJKOT, GUJARAT, 360022 </p>
+                    <p>ADDRESS : 36, Jivraj Twonship, Near Ambica Township, Rajkot, Gujarat, 360005 </p>
                 </div>
                 <div className="footer-section navigation">
                     <h4>Navigation</h4>
